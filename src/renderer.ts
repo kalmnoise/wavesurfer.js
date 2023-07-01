@@ -330,6 +330,7 @@ class Renderer extends EventEmitter<RendererEvents> {
     progressContainer.appendChild(progressCanvas)
     const progressCtx = progressCanvas.getContext('2d') as CanvasRenderingContext2D
     if (canvas.width > 0 && canvas.height > 0) {
+      console.log('Drawing--Image')
       progressCtx.drawImage(canvas, 0, 0)
     }
     // Set the composition method to draw only where the waveform is drawn
